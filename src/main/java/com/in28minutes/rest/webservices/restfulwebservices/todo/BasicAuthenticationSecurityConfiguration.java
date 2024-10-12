@@ -9,8 +9,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.security.web.util.matcher.RequestMatcher;
-
-@Configuration
+//Basic authentication is base64 and can easily be deocded, no expiration time etc, thats why we use JWT
+//@Configuration commenting bcoz we want to use jwt
 public class BasicAuthenticationSecurityConfiguration {
     //Filter chain
     //spring security authenticate all request by default
